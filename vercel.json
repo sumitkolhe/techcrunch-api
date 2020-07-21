@@ -17,8 +17,18 @@
           "key":"Access-Control-Allow-Origin",
           "value": "*"
         }
-      ],
-      "continue":true
+      ]
+      
+    },
+    {
+      "source": "/tag",
+      "headers": [
+        {
+          "key":"Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+      
     }
   ]
 }
