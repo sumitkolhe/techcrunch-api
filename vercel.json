@@ -1,0 +1,16 @@
+{
+  "version": 2,
+
+  "rewrites": [
+    {
+      "source": "/",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "continue": true
+      },
+      "destination": "/api/index.js"
+    },
+    { "source": "/tag/:tag", "destination": "/api/tag.js" }
+  ]
+}
