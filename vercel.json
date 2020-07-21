@@ -6,12 +6,17 @@
       "src": "/",
       "headers": {
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Headers": " Content-Type",
-        "continue": true
+        "Access-Control-Allow-Methods": "GET"
       },
       "dest": "/api/index.js"
     },
-    { "src": "/tag/<tag>", "dest": "/api/tag.js?tag=$tag" }
+    {
+      "src": "/tag/(?<tag>[^/]+)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET"
+      },
+      "dest": "/api/tag.js?tag=$tag"
+    }
   ]
 }
