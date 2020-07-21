@@ -1,17 +1,17 @@
 {
   "version": 2,
 
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
+      "src": "/",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET",
         "Access-Control-Allow-Headers": " Content-Type",
         "continue": true
       },
-      "destination": "/api/index.js"
+      "dest": "/api/index.js"
     },
-    { "source": "/tag/<tag>", "destination": "/api/tag.js?tag=$tag" }
+    { "src": "/tag/<tag>", "dest": "/api/tag.js?tag=$tag" }
   ]
 }
