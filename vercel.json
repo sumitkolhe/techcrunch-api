@@ -4,31 +4,14 @@
   "rewrites": [
     {
       "source": "/",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": " Content-Type",
+        "continue": true
+      },
       "destination": "/api/index.js"
     },
-    { "source": "/tag/:tag", "destination": "/api/tag.js" }
-  ],
-
-  "headers": [
-    {
-      "source": "/",
-      "headers": [
-        {
-          "key":"Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-      
-    },
-    {
-      "source": "/tag",
-      "headers": [
-        {
-          "key":"Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-      
-    }
+    { "source": "/tag/<tag>", "destination": "/api/tag.js?tag=$tag" }
   ]
 }
