@@ -14,8 +14,8 @@
       "source": "/",
       "headers": [
         {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET",
+          "key":"Access-Control-Allow-Origin",
+          "value": "*",
           "continue": true
         }
       ]
