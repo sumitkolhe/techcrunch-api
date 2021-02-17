@@ -8,6 +8,6 @@ module.exports = (req: NowRequest,res: NowResponse) => {
   addHeaders(res);
   res.json({
     status: "online",
-    Documentation: "https://github.com/sumitkolhe/techcrunch-api",
+    Documentation: "https://github.com/sumitkolhe/techcrunch-api#-techcrunch-api",
   });
 };
