@@ -1,32 +1,26 @@
-# 💻 TechCrunch API [UNOFFICIAL]
+# 💻 TechCrunch API
 
----
+An Unofficial API for TechCrunch to fetch all the articles/news from Techcrunch.com.
 
-#### This is an Unofficial API for TechCrunch. You can fetch all the articles/news from Techcrunch.com using this API.
+# :label: Description
 
----
-
-## :label: Description
-
-This API currently supports two routes. 
+This API currently supports two routes.
 
 1. **All** - All the latest articles/news that is posted on Techcrunch.
 
-2. **Articles by tag** - You can get articles/news by particular tag.
+2. **Articles by tag** - Articles/news by particular tag.
 
- 
 ---
 
-## :mag: Usage
+# :mag: Usage
 
-### # All Articles/News
+##  All Articles/News
 
-Make a `GET`request to `https://techcrunch.vercel.app`
-
+Make a `GET`request to `https://techcrunch.vercel.app/articles`
 
 #### Response Format
 
-The response JSON Object looks something like this - 
+The response JSON Object looks something like this -
 
 ```JSON
 {
@@ -55,18 +49,18 @@ The response JSON Object looks something like this -
   ]
 }
 ```
+
 ---
 
-### # Articles/News by Tag
+##  Articles/News by Tag
 
-Make a `GET`request to `https://techcrunch.vercel.app/tag/{tag-name}`
+Make a `GET`request to `https://techcrunch.vercel.app/articles?tag={tag-name}`
 
-**Example** https://techcrunch.vercel.app/tag/serverless
-
+**Example** https://techcrunch.vercel.app/articles?tag=serverless
 
 #### Response Format
 
-The response JSON Object looks something like this - 
+The response JSON Object looks something like this -
 
 ```JSON
 {
@@ -95,37 +89,44 @@ The response JSON Object looks something like this -
   ]
 }
 ```
----
-## :construction_worker: Setup 
 
-This API is created as a serverless function that is specifically made to be hosted on **Vercel**. You can modify the code to make it work with **Nodejs based server** or as **AWS Lambda functions**
+---
+
+## :construction_worker:  Local development
+
+### Prerequisites
+
+- NodeJS v10+
+- Vercel CLI : To install Vercel CLI globally use `npm i -g vercel`
 
 ### Run locally
-* You will need Vercel CLI to run this locally. 
-```
-npm i -g vercel
-```
-* Login into vercel CLI by following documentation here https://vercel.com/docs/cli#commands/login
 
-* Clone the Repo
-```
-$ git clone https://github.com/sumitkolhe/techcrunch-api
+- Clone the Repo
 
-$ cd techcrunch-api
-```
+  ```
+  git clone https://github.com/sumitkolhe/techcrunch-api
 
-* Install the dependencies
-```
-npm install
-```
+  cd techcrunch-api
+  ```
 
-* Run the API 
-```
-vercel dev
-```
+- Install the dependencies
 
-> **NOTE:** You will need to deploy the project to Vercel first even if you want to run it locally using `vercel dev`. The Vercel CLI wil guide you through the process.
----
+  ```
+  npm install
+  ```
+
+- Start development server
+
+  ```
+  npm start
+  ```
+
+- Deploy to your vercel account
+
+  ```
+  npm run deploy
+  ```
+
 
 ## :rocket: Deploy to Vercel
 

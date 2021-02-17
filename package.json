@@ -1,18 +1,20 @@
 {
-  "name": "crunch",
+  "name": "techcrunch-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "api/index.js",
+  "description": "unofficial api for techcrunch",
+  "main": "api/index.ts",
   "scripts": {
-    "dev": "nodemon api/index.js"
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "sumit kolhe",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "x-ray": "^2.3.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@types/x-ray": "^2.3.3",
+    "@vercel/node": "^1.9.0"
   }
 }

@@ -1,22 +1,11 @@
 {
   "version": 2,
-
   "routes": [
+    { "src": "/", "methods": ["GET"], "dest": "/api/index.ts" },
     {
-      "src": "/",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET"
-      },
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/tag/(?<tag>[^/]+)",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET"
-      },
-      "dest": "/api/tag.js?tag=$tag"
+      "src": "/articles",
+      "methods": ["GET"],
+      "dest": "/api/articles.ts"
     }
   ]
 }
