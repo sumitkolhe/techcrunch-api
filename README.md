@@ -10,8 +10,6 @@ This API currently supports two routes.
 
 2. **Articles by tag** - Articles/news by particular tag.
 
----
-
 # :mag: Usage
 
 ##  All Articles/News
@@ -49,8 +47,6 @@ The response JSON Object looks something like this -
   ]
 }
 ```
-
----
 
 ##  Articles/News by Tag
 
