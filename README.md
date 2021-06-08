@@ -12,7 +12,7 @@ This API currently supports two routes.
 
 # :mag: Usage
 
-##  All Articles/News
+## All Articles/News
 
 Make a `GET`request to `https://techcrunch.vercel.app/articles`
 
@@ -29,7 +29,7 @@ The response JSON Object looks something like this -
       "link": "https://techcrunch.com/2020/07/21/netflix-tests-new-low-cost-subscription-plan-in-india/",
       "timestamp": "2020-07-21T02:52:33-07:00",
       "description": "",
-      "image": "https://techcrunch.com/wp-content/uploads/2019/07/GettyImages-1065115112.jpg?w=300&h=160&crop=1",
+      "image": "https://techcrunch.com/wp-content/uploads/2019/07/GettyImages-1065115112.jpg",
       "author": [
         "Manish Singh"
       ]
@@ -39,7 +39,7 @@ The response JSON Object looks something like this -
       "link": "https://techcrunch.com/2020/07/21/russias-bestdoctor-attracts-international-investors-for-its-4-5m-round/",
       "timestamp": "2020-07-21T02:45:53-07:00",
       "description": "The private medical insurance market is expanding year on year by over 5%, and that includes in Russia where the insurance market – which grew by 4% in 2019 – has reached a value of almost $22",
-      "image": "https://techcrunch.com/wp-content/uploads/2015/08/shutterstock_109243421.jpg?w=300&h=160&crop=1",
+      "image": "https://techcrunch.com/wp-content/uploads/2015/08/shutterstock_109243421.jpg",
       "author": [
         "Mike Butcher"
       ]
@@ -48,7 +48,7 @@ The response JSON Object looks something like this -
 }
 ```
 
-##  Articles/News by Tag
+## Articles/News by Tag
 
 Make a `GET`request to `https://techcrunch.vercel.app/articles?tag={tag-name}`
 
@@ -88,7 +88,7 @@ The response JSON Object looks something like this -
 
 ---
 
-## :construction_worker:  Local development
+## :construction_worker: Local development
 
 ### Prerequisites
 
@@ -122,7 +122,6 @@ The response JSON Object looks something like this -
   ```
   npm run deploy
   ```
-
 
 ## :rocket: Deploy to Vercel
 
